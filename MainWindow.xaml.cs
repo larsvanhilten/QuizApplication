@@ -27,11 +27,10 @@ namespace QuizApplication
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            IniFile iniFile = new IniFile("Settings.ini");
-            iniFile.Write("name", nameTextBox.Text);
-
-
-            QuestionWindow questionWindow = new QuestionWindow();
+            if (nameTextBox.Text == "") {
+                return;
+            }
+            QuestionWindow questionWindow = new QuestionWindow(nameTextBox.Text);
             questionWindow.Show();
             this.Close();
         }

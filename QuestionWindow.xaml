@@ -13,10 +13,10 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Label x:Name="label" Content="In what year was .Net released?" HorizontalAlignment="Left" Margin="89,27,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <RadioButton x:Name="answerOne" Content="RadioButton" HorizontalAlignment="Left" Margin="232,110,0,0" VerticalAlignment="Top" GroupName="answerGroup"/>
+        <Label x:Name="question" Content="In what year was .Net released?" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Width="499" Height="79"/>
+        <RadioButton x:Name="answerOne" Content="RadioButton" HorizontalAlignment="Left" Margin="232,110,0,0" VerticalAlignment="Top" GroupName="answerGroup" IsChecked="True"/>
         <RadioButton x:Name="answerTwo" Content="RadioButton" HorizontalAlignment="Left" Margin="232,141,0,0" VerticalAlignment="Top" GroupName="answerGroup"/>
         <RadioButton x:Name="answerThree" Content="RadioButton" HorizontalAlignment="Left" Margin="232,174,0,0" VerticalAlignment="Top" GroupName="answerGroup"/>
-        <Button x:Name="button" Content="Next&#xD;&#xA;" HorizontalAlignment="Left" Margin="232,264,0,0" VerticalAlignment="Top" Width="85" Height="21" Background="{x:Null}" BorderBrush="Black"/>
+        <Button x:Name="button" Content="Next&#xD;&#xA;" HorizontalAlignment="Left" Margin="232,264,0,0" VerticalAlignment="Top" Width="85" Height="21" Background="{x:Null}" BorderBrush="Black" Click="button_Click"/>
     </Grid>
 </Window>
